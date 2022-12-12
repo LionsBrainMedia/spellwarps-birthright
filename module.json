@@ -1,0 +1,65 @@
+{
+  "id": "spellwarps-birthright",
+  "title": "The Spellwarp's Birthright",
+  "description": "Foundry support for The Spellwarp's Birthright (Impossible Experiments 3), by Lion's Brain Media.",
+  "version": "1.0",
+  "authors": [
+    {"name": "W. Brian Lane" 
+    }
+  ],
+  "compatibility": {
+    "minimum": "10.285",
+    "verified": "10.285"
+  },
+  "relationships": {
+    "systems": [{
+      "id": "pf2e",
+      "type": "system",
+      "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+      "compatibility": {
+        "minimum": "4.0.6"
+      }
+    }]
+  },
+  "packs": [{
+      "label": "The Spellwarp's Birthright - Scenes",
+      "type": "Scene",
+      "name": "spellwarps-birthright-scenes",
+      "path": "./packs/spellwarps-birthright-scenes.db",
+      "system": "pf2e",
+      "package": "spellwarps-birthright",
+      "private": false
+    },
+    {
+      "label": "The Spellwarp's Birthright - Creatures",
+      "type": "Actor",
+      "name": "spellwarps-birthright-creatures",
+      "path": "./packs/spellwarps-birthright-creatures.db",
+      "system": "pf2e",
+      "package": "spellwarps-birthright",
+      "private": false
+    },
+      {
+      "label": "The Spellwarp's Birthright - Adventure Toolbox",
+      "type": "Item",
+      "name": "spellwarps-birthright-adventure-toolbox",
+      "path": "./packs/spellwarps-birthright-adventure-toolbox.db",
+      "system": "pf2e",
+      "package": "spellwarps-birthright",
+      "private": false
+    }
+  ],
+    "flags": {
+    "spellwarps-birthright": {
+      "pf2e-homebrew": {
+        "creatureTraits": {
+          "necromancy": "Necromancy"
+        }
+        }
+      }
+    },
+
+  "url": "https://github.com/LionsBrainMedia/spellwarps-birthright",
+  "manifest": "https://raw.githubusercontent.com/LionsBrainMedia/spellwarps-birthright/master/module.json",
+  "download": "https://github.com/LionsBrainMedia/spellwarps-birthright/archive/refs/heads/main.zip"
+}
